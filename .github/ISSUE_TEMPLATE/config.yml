@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/uniwebpay/skills/security/advisories/new
+    about: Use private vulnerability reporting for secrets, payment-flow vulnerabilities, and exploitable behavior.
+  - name: uniweb documentation
+    url: https://skill.uniwebpay.com/docs
+    about: Read the canonical uniweb product and API documentation.

@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a problem with the uniwebpay skill or repository documentation.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security vulnerabilities or leaked credentials in a public issue. Use GitHub private vulnerability reporting instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is wrong or confusing?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should the skill or documentation say or do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Include affected files, commands, prompts, or links.
+    validations:
+      required: false

@@ -1,0 +1,23 @@
+name: Documentation improvement
+description: Suggest a clearer or more complete explanation.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security vulnerabilities, leaked credentials, or exploitable payment-flow issues, use GitHub private vulnerability reporting instead of a public issue.
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Which file, heading, or link should change?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
+      description: What should be added, removed, or clarified?
+    validations:
+      required: true
