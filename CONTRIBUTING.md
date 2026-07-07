@@ -18,7 +18,7 @@ Avoid adding broad platform documentation here when the canonical docs should li
 1. Create a branch from `main`.
 2. Keep changes focused.
 3. Update both `README.md` and `README.zh-CN.md` when user-facing setup instructions change.
-4. Update `skills/uniwebpay/SKILL.md` when agent behavior should change.
+4. Update `skills/uniweb/SKILL.md` when agent behavior should change.
 5. Open a pull request and complete the PR checklist.
 
 The `main` branch is protected. Changes should go through pull requests.
