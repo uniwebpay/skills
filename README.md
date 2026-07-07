@@ -88,7 +88,7 @@ Install the skill once, and Claude learns how to add payments. After that, descr
 ```bash
 git clone https://github.com/uniwebpay/skills.git uniwebpay-skills
 mkdir -p ~/.codex/skills
-cp -R uniwebpay-skills/skills/uniwebpay ~/.codex/skills/uniweb
+cp -R uniwebpay-skills/skills/uniweb ~/.codex/skills/uniweb
 ```
 
 Then invoke the skill explicitly:

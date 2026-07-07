@@ -88,7 +88,7 @@ Expires At: 2026-07-10 14:23
 ```bash
 git clone https://github.com/uniwebpay/skills.git uniwebpay-skills
 mkdir -p ~/.codex/skills
-cp -R uniwebpay-skills/skills/uniwebpay ~/.codex/skills/uniweb
+cp -R uniwebpay-skills/skills/uniweb ~/.codex/skills/uniweb
 ```
 
 然后显式调用这个 skill：
