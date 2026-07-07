@@ -1,5 +1,5 @@
 ---
-name: uniweb
+name: uniwebpay
 description: Help developers safely add uniweb payments to an app. Use when the user asks to accept card, WeChat Pay, Alipay, or PayNow payments; create payment links; add checkout, subscriptions, billing, or invoice-style payment collection; handle webhooks; install or use @uniwebpay/cli; or install or use @uniwebpay/sdk.
 ---
 
