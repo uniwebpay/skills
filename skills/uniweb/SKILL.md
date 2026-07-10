@@ -77,8 +77,8 @@ uniweb webhook set https://yoursite.com/webhook
 Notes:
 
 - Payment Links only support one-time payments. For subscriptions, create a recurring Price and share its `/buy/price_xxx` URL.
-- If `--methods` is omitted, defaults depend on amount and currency: SGD amounts under `10` minor units use WeChat/Alipay/PayNow; SGD amounts `>= 10` use card/WeChat/Alipay/PayNow; CNY amounts under `10` use WeChat/Alipay; CNY amounts `>= 10` use card/WeChat/Alipay; other supported currencies use card only and therefore must meet the card minimum.
-- PayNow is rejected for non-SGD links. WeChat Pay and Alipay are rejected outside SGD/CNY. Card is rejected below the `10` minor-unit minimum.
+- If `--methods` is omitted, defaults depend on amount and currency: SGD amounts under `10` minor units use WeChat/Alipay/PayNow; SGD amounts `>= 10` use card/WeChat/Alipay/PayNow; other supported currencies, including CNY, use card only and therefore must meet the card minimum.
+- PayNow, WeChat Pay, and Alipay are rejected for non-SGD links. Card is rejected below the `10` minor-unit minimum.
 
 ## Path B: Product + Price URL
 
@@ -434,8 +434,8 @@ uniweb payout cancel <id>
 - Currency support by method:
   - `card` — all uniweb supported currencies: `SGD`, `USD`, `EUR`, `GBP`, `JPY`, `CNY`, `HKD`, `AUD`, `MYR`, `THB`.
   - `paynow` — `SGD` only (DBS PayNow rail).
-  - `wechat` — `SGD` and `CNY` only.
-  - `alipay` — `SGD` and `CNY` only.
+  - `wechat` — `SGD` only.
+  - `alipay` — `SGD` only.
 - Card minimum: `10` minor units (e.g. `0.10 SGD`, `0.10 USD`). For zero-decimal currencies such as `JPY`, the minor unit is the major unit, so `10 JPY` minimum applies.
 - Payment Links and Product/Price URLs are reusable and permanent. Payment Links are one-time only; recurring billing uses Product/Price URLs.
 - Checkout Sessions are one-time and expire after 24 hours.
