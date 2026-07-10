@@ -5,3 +5,9 @@
 .idea/
 .vscode/
 *.swp
+
+# Local agent planning documents
+docs/superpowers/
+
+# Local design artifacts
+_design/
