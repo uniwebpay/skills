@@ -5,3 +5,6 @@
 .idea/
 .vscode/
 *.swp
+
+# Local agent planning documents
+docs/superpowers/
